@@ -1,7 +1,7 @@
 <?php
 
 
-namespace ESC\Queue;
+namespace Esc\Queue;
 
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Process\Process;
