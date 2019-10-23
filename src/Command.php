@@ -13,6 +13,9 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 class Command extends SymfonyCommand
 {
+    //Required for command registration
+    protected static $defaultName = 'esc:command';
+
     protected $logger;
     protected $userId;
     private $userRepository;
