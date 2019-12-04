@@ -2,7 +2,11 @@
     "name": "escsrl/command",
     "type": "library",
     "description": "Base command",
-    "keywords": ["command", "symfony", "symfony-command"],
+    "keywords": [
+        "command",
+        "symfony",
+        "symfony-command"
+    ],
     "license": "MIT",
     "authors": [
         {
@@ -29,5 +33,6 @@
     },
     "config": {
         "sort-packages": true
-    }
+    },
+    "version": "2.0.0"
 }
