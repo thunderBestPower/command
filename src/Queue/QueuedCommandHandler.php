@@ -23,7 +23,7 @@ class QueuedCommandHandler
             $message->getParameters(),
             $message->getUsername()
         );
-        $process = Process::fromShellCommandline('bin/console ' . $message->getName() . $argumentString);
+        $process = Process::fromShellCommandline('bin/console ' . $message->getName() . ' ' . $argumentString);
         $this->logger->info($process->getCommandLine());
         $process->setTimeout(0);
         $process->run();
