@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.1](https://github.com/escsrl/command/compare/v2.0.0...v2.0.1) (2019-12-10)
+
+### Bug Fixes
+
+* Added space between command name and arguments ([dfde8a](https://github.com/escsrl/command/commit/dfde8a93520a795c392f7739920884c2248e639d))
+
 ## [2.0.0](https://github.com/escsrl/command/compare/v1.0.1...v2.0.0) (2019-12-04)
 
 
