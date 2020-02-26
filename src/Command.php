@@ -2,10 +2,9 @@
 
 namespace Esc;
 
-use Esc\User\Repository\UserRepository;
+use Esc\User\Repository\EscUserRepository;
 use Exception;
 use Psr\Log\LoggerInterface;
-use RuntimeException;
 use Symfony\Component\Console\Command\Command as SymfonyCommand;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
@@ -20,7 +19,7 @@ class Command extends SymfonyCommand
     protected $userId;
     private $userRepository;
 
-    public function __construct(LoggerInterface $logger, UserRepository $userRepository)
+    public function __construct(LoggerInterface $logger, EscUserRepository $userRepository)
     {
         parent::__construct();
         $this->logger = $logger;
@@ -60,12 +59,7 @@ class Command extends SymfonyCommand
      */
     protected function getUsernameId($username): int
     {
-        $user = $this->userRepository->findOneBy(['username' => $username]);
-
-        if (!$user) {
-            throw new RuntimeException(sprintf('Username %s non trovato', $username));
-        }
-
+        $user = $this->userRepository->getOneById($username);
         return $user->getId();
     }
 }
