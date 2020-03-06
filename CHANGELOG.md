@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.1](https://github.com/escsrl/command/compare/v3.0.0...v3.0.1) (2020-03-06)
+
+
+### Bug Fixes
+
+* removed repository dependency ([e724271](https://github.com/escsrl/command/commit/e7242717db56706af0344cf080a8817c46dc4b87))
+
 ## [3.0.0](https://github.com/escsrl/command/compare/v2.0.1...v3.0.0) (2020-02-26)
 
 
