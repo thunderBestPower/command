@@ -34,11 +34,5 @@
     "config": {
         "sort-packages": true
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/veronicalupopasini/user.git"
-        }
-    ],
     "version": "3.0.0"
 }
