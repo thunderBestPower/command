@@ -9,19 +9,19 @@ class QueuedCommand
      */
     private $name;
 
-    /** @var string */
-    private $username;
+    /** @var int */
+    private $timeout;
 
     /**
      * @var array
      */
     private $parameters;
 
-    public function __construct(string $name, string $username, array $parameters)
+    public function __construct(string $name, array $parameters = [], int $timeout = 0)
     {
         $this->name = $name;
-        $this->username = $username;
         $this->parameters = $parameters;
+        $this->timeout = $timeout;
     }
 
     /**
@@ -41,10 +41,10 @@ class QueuedCommand
     }
 
     /**
-     * @return string
+     * @return int
      */
-    public function getUsername(): string
+    public function getTimeout(): int
     {
-        return $this->username;
+        return $this->timeout;
     }
 }

@@ -19,17 +19,14 @@ class QueuedCommandHandler
 
     public function __invoke(QueuedCommand $message)
     {
-        $argumentString = $this->createArgumentString(
-            $message->getParameters(),
-            $message->getUsername()
-        );
+        $argumentString = $this->createArgumentString($message->getParameters());
         $process = Process::fromShellCommandline('bin/console ' . $message->getName() . ' ' . $argumentString);
         $this->logger->info($process->getCommandLine());
         $process->setTimeout(0);
         $process->run();
     }
 
-    private function createArgumentString(array $arguments, string $username): string
+    private function createArgumentString(array $arguments): string
     {
         $optionList = [];
         foreach ($arguments as $key => $value) {
@@ -38,9 +35,6 @@ class QueuedCommandHandler
                 continue;
             }
             $optionList[] = sprintf('%s', $value);
-        }
-        if (!$username) {
-            $optionList[] = sprintf('--username=%s', $username);
         }
         $optionList[] = sprintf('--env=%s', $this->env);
         return implode(' ', $optionList);

@@ -26,7 +26,6 @@
     },
     "require": {
         "php": "^7.3",
-        "escsrl/user": "^3.0",
         "monolog/monolog": "^2.0",
         "symfony/console": "^5.0",
         "symfony/process": "^5.0"
