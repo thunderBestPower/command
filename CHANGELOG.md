@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.0](https://github.com/escsrl/command/compare/v3.0.1...v4.0.0) (2020-05-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* escsrl/user dependency
+
+### Features
+
+* removed escsrl/user dependency ([fa59592](https://github.com/escsrl/command/commit/fa595920e4521370ece521ee5029bfee46c18317))
+
 ### [3.0.1](https://github.com/escsrl/command/compare/v3.0.0...v3.0.1) (2020-03-06)
 
 
