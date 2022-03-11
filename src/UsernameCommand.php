@@ -1,6 +1,6 @@
 <?php
 
-namespace Esc;
+namespace BlueWeb;
 
 use Exception;
 use Psr\Log\LoggerInterface;
@@ -12,7 +12,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 abstract class UsernameCommand extends SymfonyCommand
 {
     //Required for command registration
-    protected static $defaultName = 'esc:usernamecommand';
+    protected static $defaultName = 'bluewebmv:usernamecommand';
 
     protected $logger;
     protected $username;

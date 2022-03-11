@@ -1,21 +1,21 @@
 <?php
 
-namespace Esc\Queue;
+namespace BlueWeb\Queue;
 
 class QueuedCommand
 {
     /**
      * @var string
      */
-    private $name;
+    private string $name;
 
     /** @var int */
-    private $timeout;
+    private int $timeout;
 
     /**
      * @var array
      */
-    private $parameters;
+    private array $parameters;
 
     public function __construct(string $name, array $parameters = [], int $timeout = 0)
     {

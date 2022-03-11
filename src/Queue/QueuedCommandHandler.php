@@ -1,15 +1,15 @@
 <?php
 
 
-namespace Esc\Queue;
+namespace BlueWeb\Queue;
 
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Process\Process;
 
 class QueuedCommandHandler
 {
-    private $env;
-    private $logger;
+    private string $env;
+    private LoggerInterface $logger;
 
     public function __construct(string $env, LoggerInterface $logger)
     {
