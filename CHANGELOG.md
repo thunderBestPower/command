@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.0.1](https://github.com/thunderBestPower/command/compare/v5.0.0...v5.0.1) (2022-03-11)
+
+
+### Bug Fixes
+
+* name package ([59df76c](https://github.com/thunderBestPower/command/commit/59df76c88d2743f2cdf567adcaba2b09ed3b658c))
+
 ## [5.0.0](https://github.com/thunderBestPower/command/compare/v4.0.0...v5.0.0) (2022-03-11)
 
 
