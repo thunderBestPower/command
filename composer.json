@@ -1,5 +1,5 @@
 {
-    "name": "bluewebmw/command",
+    "name": "bluewebmv/command",
     "type": "library",
     "description": "Base command",
     "keywords": [
@@ -33,5 +33,5 @@
     "config": {
         "sort-packages": true
     },
-    "version": "5.0.0"
+    "version": "5.0.1"
 }
