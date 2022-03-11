@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.0.0](https://github.com/thunderBestPower/command/compare/v4.0.0...v5.0.0) (2022-03-11)
+
+
+### Features
+
+* Aggiornamento alla versione 8 di php ([e4de86a](https://github.com/thunderBestPower/command/commit/e4de86a3c63d83804ab20e9b0981052cb97d24b7))
+
 ## [4.0.0](https://github.com/escsrl/command/compare/v3.0.1...v4.0.0) (2020-05-22)
 
 
