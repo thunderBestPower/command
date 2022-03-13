@@ -16,12 +16,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Esc\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Esc\\Tests\\": "tests"
+            "BlueWeb\\": "src/"
         }
     },
     "require": {
@@ -33,5 +28,5 @@
     "config": {
         "sort-packages": true
     },
-    "version": "5.0.1"
+    "version": "5.0.2"
 }
